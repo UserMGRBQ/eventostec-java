@@ -16,7 +16,13 @@ public class AwsConfig {
     @Value("${aws.region}")
     private String awsRegion;
 
-    AWSCredentials credentials = new BasicAWSCredentials("AKIA6GBMBWALK3TS2HS6", "2r3NB1TgkVXCTXEyCuAjxX2/tFlSgK0DWDVgMj4L");
+    @Value("${aws.keys.accessKey}")
+    private String accessKey;
+
+    @Value("${aws.keys.secretKey}")
+    private String secretKey;
+
+    AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
 
     @Bean
     public AmazonS3 createS3Instance() {
