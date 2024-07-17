@@ -24,7 +24,7 @@ public class EventService {
     @Autowired
     private AmazonS3 s3Client;
 
-    public Event CreateEvent(EventRequestDTO data) {
+    public Event createEvent(EventRequestDTO data) {
         String imgUrl = null;
 
         if (data.image() != null)
