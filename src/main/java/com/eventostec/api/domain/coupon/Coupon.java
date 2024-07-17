@@ -18,8 +18,8 @@ import java.util.UUID;
 @AllArgsConstructor
 public class Coupon {
 
-    @Id // indica que representa o campo PK
-    @GeneratedValue // indica que vai ser gerado automaticamente pela tabela
+    @Id
+    @GeneratedValue
     private UUID id;
 
     private Integer discount;

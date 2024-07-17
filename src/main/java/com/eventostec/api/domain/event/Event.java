@@ -14,14 +14,14 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "event")
-@Getter // lombok ajuda a criar os getters
-@Setter // lombok ajuda a criar os setters
-@NoArgsConstructor // lombok ajuda a criar um construtor sem argumento
-@AllArgsConstructor // lombok ajuda a criar um construtor com todos argumentos
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Event {
 
     @Id
-    @GeneratedValue // indica que o valor é gerado automatico pela tabela
+    @GeneratedValue
     private UUID id;
 
     private String title;
