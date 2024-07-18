@@ -13,6 +13,4 @@ public record EventRequestDTO(
         Boolean remote,
         String eventUrl,
         MultipartFile image
-)
-{
-}
+) { }
